@@ -208,3 +208,19 @@ when using || c++ checks if first boolean is true, if true it will return true a
 when using && it does the same but for false boolean expressions.
 
 **Conditionals
+
+if else syntax
+
+it checks to see if condition is true or false, else handles false case with both having their own curly braces {} no boolean expression for this when condition is false.
+
+if else statement
+
+used when you want something speciffic to happen if boolean is true and something different for false.
+
+you can also have nested if else statements in else statements
+else if is best
+
+switch case statement
+
+A way to make a decision with multiple possible outcomes. instead of nesting outcomes or sequencing many if statements.
+
