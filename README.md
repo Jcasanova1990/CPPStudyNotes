@@ -136,6 +136,41 @@ boolAlpha checks Boolean for true or false
 
 **Strings
 
+A collection of text numbers or symbols
 
-0.0 -ff
-asa
+i.e. 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string words = "This is a string.";
+    cout << words << endl;
+
+    return 0;
+}
+    must be in lower case
+
+
+**Declaring a Variable
+
+string my_var, My_var, thisIsAwesome;
+
+1.must start with an underscore or letter.
+2.cannot use c++ keyword i.e. class.
+3.c++ does not allow duplicate names for variables.
+4.c++ does not allow spaces for variables.
+
+**Iniatializing & Assigning
+
+1.you can do this seperately or combine the same statement.
+2.since the value stored in a variable can change, we call it assigning or reassigning.
+3.cout accessesthe variable.
+
+**Basic data types
+
+1.Double
+2.int
+3.string
+4.bool
+
