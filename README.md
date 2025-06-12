@@ -174,3 +174,37 @@ string my_var, My_var, thisIsAwesome;
 3.string
 4.bool
 
+**Arithmetic Operators
+
+less than & and less then equal too
+cout << boolalpha << (a < b) << endl;
+cout << boolalpha << (c <= d) << endl;
+
+the < is used to check if less then another
+this is less than or equal to <=
+
+this is greater than >
+this is greater or equal than >=
+
+&& Operator
+
+allows for compound or multiple boolean expressions.
+all must be true to be true otherwise its false.
+
+|| operator 
+
+allows for compound boolean expression, if atleast one expression is true then the whole thing is true ro be false all have to be false.
+
+! operator
+
+forces oposite result for expression
+
+**Short Circuiting
+
+if c++ can determine the result of a boolean expression before evaluating the entire thing it will stop and return the value.
+
+when using || c++ checks if first boolean is true, if true it will return true and ignore remaining expressions.
+
+when using && it does the same but for false boolean expressions.
+
+**Conditionals
