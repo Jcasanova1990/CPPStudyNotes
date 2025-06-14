@@ -250,4 +250,31 @@ prevents screen from closing after code finished running now will only close whe
 
 turtle requires SFMC Library
 
+**While Loops
+
+its like a for loop but usually contains a boolean expression
+the for and while loop produce the same results.
+
+use a while loop in most cases instead of a for loop !!ESPECIALLY FOR VIDEO GAMES!!
+
+however if specific loop parameters are required using a for loop would be better.
+
+**Break Statement
+
+is used to stop the loop at a particular point in the program.
+to avoid infinite loops.
+
+**Nested Loops
+
+a loop that exists in another loop.
+
+can be used to create unique and complex outputs
+
+however due to its complex nature its rare to see more than two
+
+this shouldnt be something to aim for because it makes code harder to understandespecially in team enviorments
+
+if possible you should refactor and simplify as much as possible.
+
+**Vectors
 
