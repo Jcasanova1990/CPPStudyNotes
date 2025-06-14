@@ -224,3 +224,30 @@ switch case statement
 
 A way to make a decision with multiple possible outcomes. instead of nesting outcomes or sequencing many if statements.
 
+**For Loops
+
+printed code that repeats multiple time.
+
+turtle syntax graphics
+
+a librairy or package that allows for simple drawing
+comands or binary language.
+
+common comands--
+
+bob.forward(n)
+bob.backward(n)
+bob.right(d)
+bob.left(d)
+
+n represents number of pixels
+
+d represnts number of degrees
+
+screen.exitonclick();
+
+prevents screen from closing after code finished running now will only close when user clicks on screen.
+
+turtle requires SFMC Library
+
+
