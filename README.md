@@ -278,3 +278,32 @@ if possible you should refactor and simplify as much as possible.
 
 **Vectors
 
+**Array
+
+Is a data structure that stores a collection of data such as ints, doubles, strings, etc.
+
+**Array Access
+
+The position n+ which an element is stored is called its index. 
+01234 = index always starts at 0 
+
+**Array Modification
+
+to modify an element within an array simply find the index at which that element is stored and assigned a new value to it.
+
+**Array Iteration
+
+if more than a few using a loop would be more beneficial and clean.
+
+**sizeOf
+
+calculates the sizeof the array in bytes in c++. a string takes up 32 bytes each string multiplies it by one so i.e 32 *  10  =  320
+                                                byte|string|output
+to get exact string size youll have to use 
+cout << sizeOf()/sizeOf([0]) << endl;
+
+**Enhanced For Loop
+
+AKA range-based for loop-
+can be used to itterate through array elements without having to refer to any array indices.
+
