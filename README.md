@@ -307,3 +307,54 @@ cout << sizeOf()/sizeOf([0]) << endl;
 AKA range-based for loop-
 can be used to itterate through array elements without having to refer to any array indices.
 
+**Array Algorithms
+
+in addition to being used with loops, arrays can also be used with conditionals to help with tasks such as searching a particular element fining a minimum or maximum element or printing elements in reverse order.
+
+**Vector basics
+
+Arrays are usefule but considered static = cant be changed.
+vectors = dynamic you can change these while the program is running
+
+**ADD or Sub Elemets
+
+push_back(20) will add specific element in () to end of vector.
+if empty it will only be one element inside vector.
+
+**Mod vector elements
+
+to modify use at() to specify index number and then then assign a new element to it.
+
+Initializing vector element does not require push_back()
+
+iterating 
+
+a vector is similar to using an array but instead of using brackets at()
+
+**Vector Algorithms
+
+same as array algorithms but can reverse order of element not just print them.
+
+**2D Array
+
+an aray in another array is called a 2d array. its a symbolic table where there are rows and columns.
+1st pos is ROW
+2nd pos is COL
+
+**2D Array syntax
+
+is an array type followed by a name for 2D array by two empty pairs of brackets
+[1] [2]
+rows, columns
+
+**modifying Array
+
+to mod use var[1][3]
+
+this would be row 1 column 3
+
+**2D Iteration Array
+
+in this case it uses for loops to iterate, outter for rows,
+inner loop for columns.
+
