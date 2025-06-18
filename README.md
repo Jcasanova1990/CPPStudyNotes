@@ -368,3 +368,15 @@ much like how an array points to all of its elements as a collection, pointers p
 Pointer reference
 
 can only be assigned a memory address. they cannot be assigned values that are int,double,string etc. a memory address is denoted with the & symbol called the reference operator. they go in front of the variable that the address is associated with.
+
+Pointer deference
+
+every memory address holds a value and that value can be accessed by using deference operator. it is denoted by a * symbol
+
+pointer to pointer
+
+to assign memory address to a new printer must be denoted with two ** symbols
+
+Pointer usage
+
+comes in hand because they help the system save memory.
