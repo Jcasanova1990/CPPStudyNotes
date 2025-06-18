@@ -358,3 +358,13 @@ this would be row 1 column 3
 in this case it uses for loops to iterate, outter for rows,
 inner loop for columns.
 
+**Pointers
+
+pointer declaration 
+
+a data type that stores a memory address of another piece of data.  
+much like how an array points to all of its elements as a collection, pointers point to the memory address of the data that they are associated with.
+
+Pointer reference
+
+can only be assigned a memory address. they cannot be assigned values that are int,double,string etc. a memory address is denoted with the & symbol called the reference operator. they go in front of the variable that the address is associated with.
