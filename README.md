@@ -73,9 +73,11 @@ int main() {
 
 file Output
 
-For Linux both
+For Linux 
 
 use code runner or ctrl+shift+b = create .exe 
+
+or
 
 to run file in linux terminal run:
 g++ filename.cpp -o rainbow
@@ -380,3 +382,6 @@ to assign memory address to a new printer must be denoted with two ** symbols
 Pointer usage
 
 comes in hand because they help the system save memory.
+
+**Strings
+
