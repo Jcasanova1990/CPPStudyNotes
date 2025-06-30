@@ -385,3 +385,70 @@ comes in hand because they help the system save memory.
 
 **Strings
 
+Characters - Strings are made up of characters between quotation marks (previously covered in the “Fundamentals” section).
+
+Length - Each string has a length (total number of characters).
+
+Index - Each character in a string has a position, called an index.
+
+**String Index
+
+Previously in the vectors module, we learned that vectors and arrays have elements that reside in certain positions or indices. A string too has indices that correspond to the position where each of its character resides. Like vector and array indices, string indices also start at 0.
+
+**Mutability
+
+ Unlike vectors and arrays where the characters can be manipulated, string literals are immutable. That means you cannot change the string literal itself. You can, however, manipulate a particular character within the string. youll have to use '' instead of ""
+
+ **Find
+
+ The find() function tells you if a character or a string is present in another string, and if so, at what index it is at. find() returns an integer index if the character or string is present and 18446744073709551615 if not.
+
+What does 18446744073709551615 mean?
+18446744073709551615 is the largest integer value possible in C++. When find() is called and 18446744073709551615 is returned, it means the system has searched through all values and cannot locate the specified value. 18446744073709551615 is an unsigned value, but it is equivalent to -1 as a signed value.
+
+my_string.find("he", 4) to search starting at a particular index add a number after the string.
+
+**substr
+
+The substr() function returns a portion of the string. Within parentheses (), provide the index at which you want the string to start followed by a comma followed by the number of characters you want the string to include. Note that if you don’t specify the number of characters, the system will start copying from the start index through to the end of the string. If you don’t specify the start index, then the system will copy the entire string. The substr() function does not modify the original string. Instead, it returns a partial or entire copy of the original string
+my_string.substr(4,9)
+left number = start include right = number of characters
+
+**Escape Characters 
+
+An escape character is a character that has a different interpretation than what you see in a string. Escape characters always start with a backslash (\). The most common escape character is the newline character (\n) which causes C++ to print on the next line.
+
+Escape Character	Description	Example
+\	Prints a backslash	cout << "\\" << endl;
+\’	Prints a single quote	cout << "\'" << endl;
+\"	Prints a double quote	cout << "\"" << endl;
+\t	Prints a tab (spacing)	cout << "Hello\tworld" << endl;
+
+When you use a " to start a string, C++ looks for the next " to end it. To avoid syntax errors, you can use a double quote to start your string, single quotes for the inner quote, and end the string with a double quote.
+
+**find firstof
+
+The find_first_of() function works similarly to how the find() function does. However, the find_first_of() function will search for any matching characters specified. For example, given the string "this is his string", my_string.find_first_of("his") will return 1 because the character h within his appears first at index number 1. Like the find() function, you can optionally specify an index number to direct the system where to start searching.
+
+push_back(char)
+➤ Adds a single character to the end of the string.
+
+insert(pos, str)
+➤ Inserts a string at a specified index position.
+
+ pop_back()
+➤ Removes the last character of the string.
+
+erase(pos, len)
+➤ Removes a substring starting at pos for len characters.
+
+replace(pos, len, str)
+➤ Replaces len characters starting at pos with str.
+
+ append(str)
+➤ Adds a string to the end (same as +=).
+
+ toupper() and tolower()
+➤ Convert characters to uppercase or lowercase (used with loops).
+
+w
