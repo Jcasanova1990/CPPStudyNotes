@@ -451,4 +451,16 @@ replace(pos, len, str)
  toupper() and tolower()
 ➤ Convert characters to uppercase or lowercase (used with loops).
 
-w
+
+**iteration
+1. Range-based for loop
+Simple and clean syntax for read-only access to each character in a string.
+
+ 2. For loop with index
+Useful when you need access to the index (e.g., for conditions or position-based logic).
+
+3. Using iterators
+ STL-style traversal using iterators; flexible for complex container types.
+
+4. Modifying characters using references
+Enables in-place modification of each character in the string.
