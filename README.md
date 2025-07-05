@@ -464,3 +464,33 @@ Useful when you need access to the index (e.g., for conditions or position-based
 
 4. Modifying characters using references
 Enables in-place modification of each character in the string.
+
+**string comparison
+
+1. Compare strings using == and !=
+Purpose: Check if two strings are equal or not equal.
+
+Use Case: Simple comparisons, case-sensitive.
+
+ == returns true if strings are exactly the same.
+ != returns true if strings are different.
+
+ 2. Compare strings using .compare()
+Purpose: Lexicographical (dictionary-style) comparison.
+
+Return Values:
+
+0 if strings are equal
+
+< 0 if first string is less than second
+
+> 0 if first string is greater than second
+
+.compare() gives more control over sorting and ordering logic.
+
+**functions
+
+void - Determines whether there is a return value or not for the function. If the function has no return value, use void. If the function returns an integer, use int, etc.
+GreetTwice - This is an example of a function name. See above for naming conventions.
+() - Parentheses are required for all functions. Any parameters that the function takes in will go into the parentheses but they are optional.
+
