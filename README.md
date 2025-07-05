@@ -568,3 +568,13 @@ Let me know if you'd like to see a version using references, return values, or u
 
 ![alt text](image-1.png)
 
+**Variable Scope
+
+Local scope means that a variable is declared inside a function or a block (like inside {} braces) and is only accessible within that function or block. Once the function or block finishes executing, the variable goes out of scope and cannot be accessed.
+
+Global Scope in C++
+
+A variable declared outside all functions (usually at the top of a file) has global scope. It can be accessed (read or modified) from any function in that file (and other files if declared extern). Global variables exist for the entire duration of the program.
+
+Global vs. Local Scope
+If a variable is declared and initialized both locally and globally, that variable will retain its content depending on how it is used. In the example below, my_var is declared and initialized globally as global scope and locally as local scope. Since the variable has differing scopes, it retains its value when called or printed.
