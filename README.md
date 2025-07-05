@@ -491,6 +491,38 @@ Return Values:
 **functions
 
 void - Determines whether there is a return value or not for the function. If the function has no return value, use void. If the function returns an integer, use int, etc.
+
 GreetTwice - This is an example of a function name. See above for naming conventions.
+
 () - Parentheses are required for all functions. Any parameters that the function takes in will go into the parentheses but they are optional.
 
+Doxygen Tool-
+
+There is an online tool called Doxygen that can help generate C++ code documentation. For more information, you may visit the Doxygen website at this link: Doxygen. However, for the purposes of this module, we will only focus on self-created documentation. In particular, we will be using mostly @param for parameters and @return for return values to document our functions.
+
+**parameters
+
+In C++, passing parameters means giving values (arguments) to a function. There are 3 main ways to do this:
+
+pass by value
+
+a copy of the variable is passed
+changes made inside the function do not affect the original
+
+Pass by Reference (&)
+
+Passes the original variable.
+Changes inside the function do affect the original.
+
+Pass by Pointer (*)
+Passes the address of a variable.
+
+Useful when working with dynamic memory or optional arguments.
+
+| Method            | Syntax         | Affects Original? | Used For                                  |
+| ----------------- | -------------- | ----------------- | ----------------------------------------- |
+| Pass by Value     | `func(int x)`  | ❌ No              | Simple data, safe from side effects       |
+| Pass by Reference | `func(int &x)` | ✅ Yes             | Modify original, efficient for large data |
+| Pass by Pointer   | `func(int *x)` | ✅ Yes             | Dynamic memory, optional parameters       |
+
+![alt text](image.png)
