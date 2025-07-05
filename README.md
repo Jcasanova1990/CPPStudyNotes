@@ -526,3 +526,45 @@ Useful when working with dynamic memory or optional arguments.
 | Pass by Pointer   | `func(int *x)` | ✅ Yes             | Dynamic memory, optional parameters       |
 
 ![alt text](image.png)
+
+The image shows a C++ function definition and call for a function named AddSub that takes three integer parameters:
+
+void AddSub(int num1, int num2, int num3) {
+    cout << num1 + num2 + num3 << endl;
+    cout << num1 - num2 - num3 << endl;
+}
+
+💡 Explanation of the Function Call:
+cpp
+Copy
+Edit
+AddSub(5, 10, 15);
+num1 = 5
+
+num2 = 10
+
+num3 = 15
+
+✅ Output of the Function:
+cpp
+Copy
+Edit
+5 + 10 + 15 = 30
+5 - 10 - 15 = -20
+🧠 Summary:
+This example demonstrates:
+
+Order of parameters matters: values are assigned in the same order as defined.
+
+It performs two operations using all three values:
+
+Addition of all three
+
+Subtraction in sequence (num1 - num2 - num3)
+
+Let me know if you'd like to see a version using references, return values, or user input!
+
+**checking parameters
+
+![alt text](image-1.png)
+
