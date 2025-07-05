@@ -578,3 +578,101 @@ A variable declared outside all functions (usually at the top of a file) has glo
 
 Global vs. Local Scope
 If a variable is declared and initialized both locally and globally, that variable will retain its content depending on how it is used. In the example below, my_var is declared and initialized globally as global scope and locally as local scope. Since the variable has differing scopes, it retains its value when called or printed.
+
+**returning values
+
+Returning Values in C++
+1. Use the return Keyword to Return a Value
+In C++, functions can return values using the return keyword.
+
+
+int add(int a, int b) {
+    return a + b;  // returns the sum of a and b
+}
+2. Return Value of print Statements (std::cout)
+The std::cout object is an instance of ostream. When you use:
+
+
+std::cout << "Hello";
+It returns the ostream object itself, which allows chaining:
+
+
+std::cout << "Hello" << " World\n";
+So the return value of the print statement (operator<<) is the same ostream object to allow chaining, not the text printed.
+
+3. Return Different Data Types
+Functions can return any type:
+
+int getInt() {
+    return 42;
+}
+
+double getDouble() {
+    return 3.14;
+}
+
+std::string getString() {
+    return "Hello, C++!";
+}
+
+bool isEven(int num) {
+    return num % 2 == 0;
+}
+4. Create and Apply Helper Functions
+Helper functions are small functions that perform specific tasks and can be used inside other functions.
+
+#include <iostream>
+using namespace std;
+
+// Helper function to add two numbers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Helper function to check if a number is even
+bool isEven(int n) {
+    return n % 2 == 0;
+}
+
+// Helper function to greet user by name
+string greet(string name) {
+    return "Hello, " + name + "!";
+}
+
+int main() {
+    int sum = add(10, 15);
+    cout << "Sum: " << sum << endl;
+
+    bool evenCheck = isEven(sum);
+    cout << "Is sum even? " << (evenCheck ? "Yes" : "No") << endl;
+
+    string message = greet("Alice");
+    cout << message << endl;
+
+    return 0;
+}
+Summary:
+Concept	Example Code
+Return a value	return a + b;
+cout returns ostream	Enables chaining: cout << "Hi";
+Return different types	int, double, string, bool
+Use helper functions	Small reusable functions like add(), isEven()
+
+Return keyword
+A statement used inside a function to send a value back to the part of the program that called the function.
+
+Return value
+The actual data (value) that a function sends back to its caller when it finishes running.
+
+Function
+A reusable block of code that performs a specific task and can optionally return a value.
+
+Helper function
+A small, focused function designed to perform a specific sub-task to help the main functions keep code clean and organized.
+
+Data types
+The kind of data a function can return, such as int (integer), double (decimal number), string (text), or bool (true/false).
+
+std::cout
+The C++ object used to print output to the console; it returns a stream object allowing multiple print statements to be chained together.
+
