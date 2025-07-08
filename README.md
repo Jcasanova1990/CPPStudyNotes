@@ -676,3 +676,83 @@ The kind of data a function can return, such as int (integer), double (decimal n
 std::cout
 The C++ object used to print output to the console; it returns a stream object allowing multiple print statements to be chained together.
 
+**files
+
+File Basics
+
+This module is all about working with files on a computer. The first step is to locate the desired file. That means being able to navigate the file system. The file we are going to use is called practice1.txt. It is located in the text folder, which is inside the folder called student. So the path to the file is: student/text/practice1.txt.
+
+Open a File Using ifstream
+
+Definition: ifstream stands for input file stream and is used to open and read data from a file.
+
+get() – Reads a single character
+
+getline() – Reads an entire line of text
+
+rdbuf() – Reads the entire contents of the stream
+
+Token: A token is a meaningful unit of text, such as a word, number, or symbol, usually separated by spaces, commas, or other delimiters.
+
+Definition: ignore() skips characters in a stream until a certain condition (like a character or number of characters) is met.
+
+Definition: ofstream (output file stream) is used to write data to a file.
+
+What Happens If the File Doesn’t Exist?
+Explanation:
+
+If the file does not exist, ofstream creates it.
+
+If it does exist, it will be overwritten unless opened in append mode.
+
+ofstream file("newfile.txt"); // newfile.txt will be created
+
+Write Multiline Strings to a File
+You can use \n or endl to add new lines.
+
+4. Input, Output, and Append Modes
+Modes in fstream control how files are accessed:
+
+Mode	Description	Flag
+Input Mode	Read from a file	ios::in
+Output Mode	Write to a file (overwrites content)	ios::out
+Append Mode	Add to the end of file without deleting existing data	ios::app
+
+Define CSV
+CSV (Comma-Separated Values) is a simple text format where each line represents a row, and columns are separated by commas.
+
+Example CSV content:
+Name,Age,City
+Alice,30,New York
+Bob,25,Los Angeles
+
+Define CSV	Text format: "value1,value2,value3"
+
+Read CSV	getline(file, line) + stringstream
+
+Iterate Rows/Cells	Nested getline() with delimiter ','
+
+Format Printed Data	Use setw() and left from <iomanip>
+
+Write CSV	file << "value1,value2\n"
+
+**recursion
+
+1. Define Recursion
+Recursion is when a function calls itself in order to solve a smaller version of the original problem.
+
+Recursion = solving a big problem by breaking it into smaller, similar problems.
+
+✅ 2. Identify the Base Case
+The base case is the condition that stops the recursion. It prevents the function from calling itself forever.
+
+It’s the simplest possible version of the problem that can be solved directly.
+
+✅ 3. Identify the Recursive Pattern
+The recursive pattern is where the function calls itself with modified input, moving closer to the base case each time.
+
+Recursion	factorial(n) calls itself	Function calls itself
+
+Base case	if (n == 0)	Stops recursion
+
+Recursive pattern	n * factorial(n - 1)	Reduces problem size and recurses
